@@ -10,6 +10,8 @@ public class Calculator {
         int sixDivTwo = six / two;
         int fiveMinusTwo = five - two;
         int fourTimeTwo = four * two;
+        five -= 5;
+        System.out.println(five);
 
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
@@ -17,3 +19,5 @@ public class Calculator {
 
     }
 }
+
+
