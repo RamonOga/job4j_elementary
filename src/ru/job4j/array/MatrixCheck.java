@@ -38,10 +38,7 @@ public class MatrixCheck {
                 result = MatrixCheck.monoHorizontal(board, i) || MatrixCheck.monoVertical(board, i);
                 if (result) {
                     break;
-                } else {
-                    continue;
                 }
-
             }
         }
         return result;
