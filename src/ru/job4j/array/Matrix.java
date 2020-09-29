@@ -8,7 +8,6 @@ public class Matrix {
               rsl[row][cell] = (row + 1) * (cell + 1);
             }
         }
-
         return rsl;
     }
 }
