@@ -7,26 +7,25 @@ public class Merge {
         int countRight = 0;
         int count = 0;
 
-        while (countLeft < left.length && countRight < right.length) {
-            if (left[countLeft] < right[countRight]) {
+        for (int i = 0; i < rsl.length; i++) {
+            if (countLeft < left.length && countRight < right.length) {
+                if (left[countLeft] < right[countRight]) {
+                    rsl[count] = left[countLeft];
+                    countLeft++;
+                } else {
+                    rsl[count] = right[countRight];
+                    countRight++;
+                }
+                count++;
+            } else if (countLeft != left.length) {
                 rsl[count] = left[countLeft];
+                count++;
                 countLeft++;
-            } else {
+            } else if (countRight != right.length) {
                 rsl[count] = right[countRight];
+                count++;
                 countRight++;
             }
-            count++;
-        }
-
-        while (countLeft != left.length) {
-                rsl[count] = left[countLeft];
-                count++;
-                countLeft++;
-        }
-        while (countRight != right.length) {
-                rsl[count] = right[countRight];
-                count++;
-                countRight++;
         }
         return rsl;
     }
