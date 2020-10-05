@@ -16,4 +16,11 @@ public class LicenseTest {
         second.setCode("audio");
         assertThat(first, is(second));
     }
+
+    @Test
+    public void eqNameNull() {
+        License first = new License();
+        License second = new License();
+        assertThat(first, is(second));
+    }
 }
